@@ -27,3 +27,32 @@ function addMsg() {
 </div>`;
     span.innerHTML = span.innerHTML + msg;
 }
+
+sendMsgBtn = document.querySelector("#sendMsgBtn");
+chatBox = document.querySelector('#chatbox_chat');
+
+sendMsgBtn.addEventListener('click', () => {
+    // console.log('sent');
+    let i = Math.random() * 10;
+    if (i > 5) {
+        sendMsg();
+    } else {
+        revieceMsg();
+    }
+})
+function sendMsg() {
+    chatBox.innerHTML +=
+        `<div class="message message_sent">
+        <div>
+        message_sent
+        </div>
+    </div>`;
+}
+function revieceMsg() {
+    chatBox.innerHTML +=
+        `<div class="message message_recieved">
+            <div>
+                message_recieved
+            </div>
+        </div>`;
+}
