@@ -1,7 +1,9 @@
 :root {
   --blue: #1e90ff;
   --white: #ffffff;
-  --UIDark: rgb(28, 30, 33);
+  /* --UIDark: rgb(28, 30, 33); */
+  --UIDark: #130303;
+  --text-color: #f7f4f3;
 }
 * {
   box-sizing: border-box;
@@ -43,7 +45,7 @@ body {
   /* background-color: #18191a; */
   /* background-color: var(--UIDark); */
   display: flex;
-  color: white;
+  color: var(--text-color);
   /* justify-content: center; */
   justify-content: start;
   height: 80px;
@@ -79,7 +81,7 @@ body {
   margin-bottom: 10px;
   width: 100%;
 }
-#search_bar input{
+#search_bar input {
   width: 100%;
   border-radius: 20px;
   height: 30px;
@@ -175,7 +177,7 @@ body {
 
 #chatbox_header_name {
   font-size: 20px;
-  color: white;
+  color: var(--text-color);
   font-weight: 600;
   height: 20px;
 }
@@ -235,11 +237,11 @@ body {
 }
 .message_sent > div {
   background-color: rgb(47, 91, 177);
-  color: white;
+  color: var(--text-color);
 }
 .message_recieved > div {
   background-color: rgb(75, 77, 81);
-  color: white;
+  color: var(--text-color);
 }
 
 #footer {
